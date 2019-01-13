@@ -3,14 +3,14 @@
         <div class="container">
           <div class="columns is-gapless">
             <NavButton text="home" link="#" />
-            <NavButton text="clients" link="#"  />
+            <NavButton text="projects" link="#"  />
             <div class="column has-text-centered">
               <figure class="image is-24x24 logo">
                 <img src="https://via.placeholder.com/24" />
               </figure>
             </div>
             <NavButton text="clients" link="#"  />
-            <NavButton text="clients" link="#"  />
+            <NavButton text="contact" link="#"  />
           </div>
         </div>
       </div>
@@ -25,14 +25,14 @@ export default {
         NavButton,
     },
     data: function data(){
-        return {
+      return {
         showNav: false,
-        }
+      }
     },
     created() {
-        window.setTimeout(() => {
+      setTimeout(() => {
         this.showNav = true;
-        }, 500)
+      }, 500)
     }
 }
 </script>
