@@ -1,7 +1,7 @@
 <template>
     <div class="column has-text-centered">
         <a :href="link">
-            <p class="navLink has-text-black">
+            <p class="navLink">
                 {{ text }}
             </p>
         </a>
@@ -22,5 +22,10 @@ export default {
     .navLink {
         font-variant: small-caps;
         padding: 15px 0;
+        color: black;
+        transition: color .3s;
+        &:hover {
+            color: lightgrey;
+        }
     }
 </style>
