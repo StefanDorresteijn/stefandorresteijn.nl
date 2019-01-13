@@ -42,11 +42,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
-
-  .logo {
-    margin: 15px auto;
-  }
+<style lang="scss" scoped>
 
   #pageTitle {
     margin-bottom: 0;

@@ -1,19 +1,12 @@
 <template>
   <div class="projects">
     <transition name="fade">
-      <ContentBlock
+      <div class="body"
         v-if="showContent"
         :background="backgroundImage"
       >
-        <div class="content" id="body">
-          <h1 class="has-text-white" id="pageTitle">Stefan Dorresteijn</h1>
-          <i class="has-text-white" id="subTitle">[ steɪfɔn ] - proper noun</i>
-          <p class="has-text-white" id="wordDefinition">
-            Stefan Dorresteijn is a full stack engineer,
-            specialized in building full commercial
-            applications from scratch.</p>
-        </div>
-      </ContentBlock>
+         <h1>Projects</h1>
+      </div>
     </transition>
   </div>
 </template>
