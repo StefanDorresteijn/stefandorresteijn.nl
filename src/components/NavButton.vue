@@ -19,8 +19,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .navLink {
-    margin: 15px 0;
-    font-variant: small-caps;
-  }
+    .navLink {
+        font-variant: small-caps;
+        padding: 15px 0;
+    }
 </style>
