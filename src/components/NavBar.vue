@@ -15,15 +15,15 @@
             </div>
           </div>
           <div :class="['columns', 'is-gapless', {'is-hidden-touch': openMenu}]">
-            <NavButton text="home" link="#" />
-            <NavButton text="projects" link="#"  />
+            <NavButton text="home" link="#" :active="$route.name === 'home'" />
+            <NavButton text="projects" link="#" :active="$route.name === 'projects'" />
             <div class="column has-text-centered is-hidden-touch">
               <figure class="image is-24x24 logo">
                 <img src="https://via.placeholder.com/28/fff/000/?text=S" />
               </figure>
             </div>
-            <NavButton text="clients" link="#"  />
-            <NavButton text="contact" link="#"  />
+            <NavButton text="clients" link="#" :active="$route.name === 'clients'" />
+            <NavButton text="contact" link="#" :active="$route.name === 'contact'" />
           </div>
         </div>
       </div>

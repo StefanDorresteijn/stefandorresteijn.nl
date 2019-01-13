@@ -1,7 +1,7 @@
 <template>
     <div class="column has-text-centered">
         <a :href="link">
-            <p class="navLink">
+            <p :class="[{ active: active }, 'navLink']">
                 {{ text }}
             </p>
         </a>
@@ -14,6 +14,7 @@ export default {
     props: {
         text: String,
         link: String,
+        active: Boolean,
     }
 }
 </script>
@@ -24,7 +25,7 @@ export default {
         padding: 15px 0;
         color: black;
         transition: color .3s;
-        &:hover {
+        &:hover, &.active {
             color: lightgrey;
         }
     }
