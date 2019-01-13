@@ -12,21 +12,21 @@
 
 <script>
 export default {
-    name: "contentblock",
-    data: function data() {
-        return {
-            showContent: false,
-        }
-    },
-    created() {
-        setTimeout(() => {
-            this.showContent = true;
-        }, 500)
-    },
-    props: {
-        background: String,
-    }
-}
+  name: 'contentblock',
+  data: function data() {
+    return {
+      showContent: false,
+    };
+  },
+  created() {
+    setTimeout(() => {
+      this.showContent = true;
+    }, 500);
+  },
+  props: {
+    background: String,
+  },
+};
 </script>
 
 <style lang="scss" scoped>

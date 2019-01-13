@@ -11,7 +11,10 @@
         <div class="content" id="body">
           <h1 class="has-text-white" id="pageTitle">Stefan Dorresteijn</h1>
           <i class="has-text-white" id="subTitle">(proper noun)</i>
-          <p class="has-text-white" id="wordDefinition">Stefan Dorresteijn is a full stack engineer, specialized in building full commercial applications from scratch.</p>
+          <p class="has-text-white" id="wordDefinition">
+            Stefan Dorresteijn is a full stack engineer,
+            specialized in building full commercial
+            applications from scratch.</p>
         </div>
       </ContentBlock>
     </transition>
@@ -34,13 +37,13 @@ export default {
     return {
       showContent: false,
       backgroundImage,
-    }
+    };
   },
   created() {
     setTimeout(() => {
       this.showContent = true;
     }, 1000);
-  }
+  },
 };
 </script>
 
@@ -70,7 +73,7 @@ export default {
   #body {
     max-width: 350px;
   }
-  
+
   // Animations
   .slide-down-enter-active {
     transition: all 1s;

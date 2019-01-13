@@ -3,7 +3,7 @@
         <div class="container">
           <div class="is-hidden-desktop">
             <div class="navbar-brand">
-              <a class="navbar-item" href="https://bulma.io">
+              <a class="navbar-item" href="#">
                 <img src="https://via.placeholder.com/28/fff/000/?text=S" width="28" height="28">
               </a>
 
@@ -33,27 +33,27 @@
 import NavButton from '@/components/NavButton.vue';
 
 export default {
-    name: "navbar",
-    components: {
-        NavButton,
+  name: 'navbar',
+  components: {
+    NavButton,
+  },
+  data: function data() {
+    return {
+      showNav: false,
+      openMenu: true,
+    };
+  },
+  created() {
+    setTimeout(() => {
+      this.showNav = true;
+    }, 500);
+  },
+  methods: {
+    openMobileMenu: function openMobileMenu() {
+      this.openMenu = !this.openMenu;
     },
-    data: function data(){
-      return {
-        showNav: false,
-        openMenu: true,
-      }
-    },
-    created() {
-      setTimeout(() => {
-        this.showNav = true;
-      }, 500)
-    },
-    methods: {
-      openMobileMenu: function openMobileMenu() {
-        this.openMenu = !this.openMenu;
-      }
-    }
-}
+  },
+};
 </script>
 
 <style lang="scss" scoped>

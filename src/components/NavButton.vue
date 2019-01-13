@@ -10,13 +10,13 @@
 
 <script>
 export default {
-    name: "navbutton",
-    props: {
-        text: String,
-        link: String,
-        active: Boolean,
-    }
-}
+  name: 'navbutton',
+  props: {
+    text: String,
+    link: String,
+    active: Boolean,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
