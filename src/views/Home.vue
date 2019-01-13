@@ -1,8 +1,5 @@
 <template>
   <div class="home">
-    <transition name="slide-down">
-      <NavBar />
-    </transition>
     <transition name="fade">
       <ContentBlock
         v-if="showContent"
@@ -23,14 +20,12 @@
 
 <script>
 // @ is an alias to /src
-import NavBar from '@/components/NavBar.vue';
 import ContentBlock from '@/components/ContentBlock.vue';
 import backgroundImage from '../assets/stefan_at_work2.jpg';
 
 export default {
   name: 'home',
   components: {
-    NavBar,
     ContentBlock,
   },
   data: function data() {
@@ -42,7 +37,7 @@ export default {
   created() {
     setTimeout(() => {
       this.showContent = true;
-    }, 1000);
+    }, 100);
   },
 };
 </script>
@@ -72,22 +67,5 @@ export default {
 
   #body {
     max-width: 350px;
-  }
-
-  // Animations
-  .slide-down-enter-active {
-    transition: all 1s;
-  }
-  .slide-down-enter, .slide-down-leave-to
-  {
-    transform: translateY(-60px);
-    opacity: 0;
-  }
-  .fade-enter-active {
-    transition: all 1s;
-  }
-  .fade-enter, .fade-leave-to
-  {
-    opacity: 0;
   }
 </style>

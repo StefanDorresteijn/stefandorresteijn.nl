@@ -1,6 +1,6 @@
 <template>
     <div class="column has-text-centered">
-        <a :href="link">
+        <a v-on:click="navigate(link)">
             <p :class="[{ active: active }, 'navLink']">
                 {{ text }}
             </p>
@@ -15,6 +15,15 @@ export default {
     text: String,
     link: String,
     active: Boolean,
+    click: Function,
+  },
+  methods: {
+    navigate: async function navigate(name) {
+      await this.$router.push({
+        name,
+      });
+      this.$props.click();
+    },
   },
 };
 </script>

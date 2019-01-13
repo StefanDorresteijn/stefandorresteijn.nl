@@ -1,5 +1,5 @@
 <template>
-    <div v-if="showNav" id="navBar">
+    <div id="navBar">
         <div class="container">
           <div class="is-hidden-desktop">
             <div class="navbar-brand">
@@ -15,15 +15,15 @@
             </div>
           </div>
           <div :class="['columns', 'is-gapless', {'is-hidden-touch': openMenu}]">
-            <NavButton text="home" link="#" :active="$route.name === 'home'" />
-            <NavButton text="projects" link="#" :active="$route.name === 'projects'" />
+            <NavButton text="home" link="home" :active="$route.name === 'home'" :click="openMobileMenu" />
+            <NavButton text="projects" link="projects" :active="$route.name === 'projects'" :click="openMobileMenu" />
             <div class="column has-text-centered is-hidden-touch">
               <figure class="image is-24x24 logo">
                 <img src="https://via.placeholder.com/28/fff/000/?text=S" />
               </figure>
             </div>
-            <NavButton text="clients" link="#" :active="$route.name === 'clients'" />
-            <NavButton text="contact" link="#" :active="$route.name === 'contact'" />
+            <NavButton text="clients" link="#" :active="$route.name === 'clients'" :click="openMobileMenu" />
+            <NavButton text="contact" link="#" :active="$route.name === 'contact'" :click="openMobileMenu" />
           </div>
         </div>
       </div>
@@ -39,14 +39,8 @@ export default {
   },
   data: function data() {
     return {
-      showNav: false,
       openMenu: true,
     };
-  },
-  created() {
-    setTimeout(() => {
-      this.showNav = true;
-    }, 500);
   },
   methods: {
     openMobileMenu: function openMobileMenu() {
