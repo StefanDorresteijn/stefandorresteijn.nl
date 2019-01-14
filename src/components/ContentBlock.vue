@@ -33,22 +33,33 @@ export default {
 .contentBlock {
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 54px);
+    height: 100vh;
 }
 .background {
-    height: calc(100vh - 54px);
+    height: 100vh;
     background-position: center center;
     background-size: cover;
     width: 100%;
-    position: absolute;
+    position: fixed;
 }
 .backgroundOverlay {
-    height: calc(100vh - 54px);
+    height: 100vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.75);
-    position: absolute;
+    position: fixed;
 }
 .foreground {
     z-index: 1;
+}
+
+@media screen and (max-width: 680px) {
+    .foreground {
+        max-height: 100vh;
+        margin-top: 115px;
+        padding: 15px;
+    }
+    .background {
+        background-size: cover;
+    }
 }
 </style>

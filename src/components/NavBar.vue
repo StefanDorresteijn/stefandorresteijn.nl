@@ -53,6 +53,11 @@ export default {
 <style lang="scss" scoped>
   #navBar {
     background-color: #fff;
+    position: fixed;
+    left: 0;
+    top:0;
+    right:0;
+    z-index:1000;
   }
   .logo {
     margin: 15px auto;
