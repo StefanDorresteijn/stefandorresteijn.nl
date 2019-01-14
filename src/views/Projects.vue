@@ -29,9 +29,14 @@
                             <h2 class="projectTitle">podshare</h2>
                             <p class="projectDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum consequat nisi, eget sollicitudin nisl faucibus sit amet. Praesent ut sagittis sem, sagittis aliquam tellus. Proin accumsan eros augue, ut placerat turpis egestas in.</p>
                             <p class="projectDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum consequat nisi, eget sollicitudin nisl faucibus sit amet. Praesent ut sagittis sem, sagittis aliquam tellus. Proin accumsan eros augue, ut placerat turpis egestas in.</p>
-                            <p class="projectDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum consequat nisi, eget sollicitudin nisl faucibus sit amet. Praesent ut sagittis sem, sagittis aliquam tellus. Proin accumsan eros augue, ut placerat turpis egestas in.</p>
-                            <p class="projectDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum consequat nisi, eget sollicitudin nisl faucibus sit amet. Praesent ut sagittis sem, sagittis aliquam tellus. Proin accumsan eros augue, ut placerat turpis egestas in.</p>
                             <a href="https://podshare.io/" target="_blank" class="button is-large visitButton">visit podshare</a>
+                            <div class="projectDivider"></div>
+                            <div class="projectToolsUsed">
+                                <img :src="rorImage" />
+                                <img :src="vuejsImage" />
+                                <img :src="htmlImage" />
+                                <img :src="cssImage" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -49,9 +54,15 @@
                             <h2 class="projectTitle">sjauf</h2>
                             <p class="projectDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum consequat nisi, eget sollicitudin nisl faucibus sit amet. Praesent ut sagittis sem, sagittis aliquam tellus. Proin accumsan eros augue, ut placerat turpis egestas in.</p>
                             <p class="projectDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum consequat nisi, eget sollicitudin nisl faucibus sit amet. Praesent ut sagittis sem, sagittis aliquam tellus. Proin accumsan eros augue, ut placerat turpis egestas in.</p>
-                            <p class="projectDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum consequat nisi, eget sollicitudin nisl faucibus sit amet. Praesent ut sagittis sem, sagittis aliquam tellus. Proin accumsan eros augue, ut placerat turpis egestas in.</p>
-                            <p class="projectDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum consequat nisi, eget sollicitudin nisl faucibus sit amet. Praesent ut sagittis sem, sagittis aliquam tellus. Proin accumsan eros augue, ut placerat turpis egestas in.</p>
                             <a href="https://sjauf.nl/" target="_blank" class="button is-large visitButton">visit sjauf</a>
+                            <div class="projectDivider"></div>
+                            <div class="projectToolsUsed">
+                                <img :src="elixirImage" />
+                                <img :src="vuejsImage" />
+                                <img :src="htmlImage" />
+                                <img :src="cssImage" />
+                                <img :src="reactImage" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -71,30 +82,38 @@
 
 <script>
 // @ is an alias to /src
-import ContentBlock from '@/components/ContentBlock.vue';
 import backgroundImage from '../assets/stefan_at_work.jpg';
 import podshareImage from '../assets/podshare.jpg';
 import sjaufImage from '../assets/sjauf.jpg';
+import elixirImage from '../assets/elixir.jpg';
+import rorImage from '../assets/RoR.jpg';
+import vuejsImage from '../assets/vuejs.jpg';
+import htmlImage from '../assets/html5.jpg';
+import cssImage from '../assets/css3.jpg';
+import reactImage from '../assets/reactjs.jpg';
 
 export default {
-    name: "projects",
-    components: {
-        ContentBlock,
-    },
-    data: function data() {
-        return {
-            showContent: false,
-            backgroundImage,
-            podshareImage,
-            sjaufImage,
-        };
-    },
-    created() {
-        setTimeout(() => {
-            this.showContent = true;
-        }, 100);
-    },
-}
+  name: 'projects',
+  data: function data() {
+    return {
+      showContent: false,
+      backgroundImage,
+      podshareImage,
+      sjaufImage,
+      elixirImage,
+      rorImage,
+      vuejsImage,
+      htmlImage,
+      cssImage,
+      reactImage,
+    };
+  },
+  created() {
+    setTimeout(() => {
+      this.showContent = true;
+    }, 100);
+  },
+};
 </script>
 
 <style lang="scss">
@@ -144,5 +163,17 @@ export default {
     }
     .visitButton {
         font-variant: small-caps;
+    }
+    .projectDivider {
+        margin: 15px 0;
+        border-bottom: 1px solid #ccc;
+    }
+    .projectToolsUsed {
+        flex-direction: row;
+        img {
+            margin-right: 5px;
+            width: 24px;
+            height: 24px;
+        }
     }
 </style>

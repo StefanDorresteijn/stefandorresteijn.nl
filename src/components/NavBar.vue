@@ -3,7 +3,7 @@
         <div class="container">
           <div class="is-hidden-desktop">
             <div class="navbar-brand">
-              <a class="navbar-item" href="#">
+              <a class="navbar-item" v-on:click="navigate('home')">
                 <img src="https://via.placeholder.com/28/fff/000/?text=S" width="28" height="28">
               </a>
 
@@ -18,9 +18,11 @@
             <NavButton text="home" link="home" :active="$route.name === 'home'" :click="openMobileMenu" />
             <NavButton text="projects" link="projects" :active="$route.name === 'projects'" :click="openMobileMenu" />
             <div class="column has-text-centered is-hidden-touch">
-              <figure class="image is-24x24 logo">
-                <img src="https://via.placeholder.com/28/fff/000/?text=S" />
-              </figure>
+              <a class="" v-on:click="navigate('home')">
+                <figure class="image is-24x24 logo">
+                  <img src="https://via.placeholder.com/28/fff/000/?text=S" />
+                </figure>
+              </a>
             </div>
             <NavButton text="clients" link="#" :active="$route.name === 'clients'" :click="openMobileMenu" />
             <NavButton text="contact" link="#" :active="$route.name === 'contact'" :click="openMobileMenu" />
@@ -45,6 +47,11 @@ export default {
   methods: {
     openMobileMenu: function openMobileMenu() {
       this.openMenu = !this.openMenu;
+    },
+    navigate: async function navigate(name) {
+      await this.$router.push({
+        name,
+      });
     },
   },
 };
