@@ -32,7 +32,7 @@
                                             <div class="field">
                                                 <label class="label">Name</label>
                                                 <div class="control has-icons-left has-icons-right">
-                                                    <input class="input" type="text" placeholder="I'm sure your name is awesome">
+                                                    <input class="input" name="name" type="text" placeholder="I'm sure your name is awesome">
                                                     <span class="icon is-small is-left">
                                                     <i class="fas fa-user"></i>
                                                     </span>
@@ -41,7 +41,7 @@
                                             <div class="field">
                                                 <label class="label">Email</label>
                                                 <div class="control has-icons-left has-icons-right">
-                                                    <input class="input" type="text" placeholder="I bet your email is great too">
+                                                    <input class="input" name="email" type="text" placeholder="I bet your email is great too">
                                                     <span class="icon is-small is-left">
                                                     <i class="fas fa-at"></i>
                                                     </span>
@@ -50,7 +50,7 @@
                                             <div class="field">
                                                 <label class="label">Phone Number</label>
                                                 <div class="control has-icons-left has-icons-right">
-                                                    <input class="input" type="text" placeholder="Your phone number probably has really cool numbers">
+                                                    <input class="input" name="phone" type="text" placeholder="Your phone number probably has really cool numbers">
                                                     <span class="icon is-small is-left">
                                                     <i class="fas fa-phone"></i>
                                                     </span>
@@ -59,11 +59,11 @@
                                             <div class="field">
                                                 <label class="label">Message</label>
                                                 <div class="control">
-                                                    <textarea class="textarea" placeholder="I can't wait to see what you come up with for the message. I bet it'll be Shakespearean."></textarea>
+                                                    <textarea class="textarea" name="message" placeholder="I can't wait to see what you come up with for the message. I bet it'll be Shakespearean."></textarea>
                                                 </div>
                                             </div>
                                             <div class="field">
-                                                <button class="button is-primary is-pulled-right">Send</button>
+                                                <button class="button is-primary is-pulled-right" type="submit" name="send">Send</button>
                                             </div>
                                         </form>
                                     </div>
