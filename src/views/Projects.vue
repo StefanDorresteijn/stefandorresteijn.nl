@@ -62,24 +62,24 @@ import podshareImage from '../assets/podshare.jpg';
 import sjaufImage from '../assets/sjauf.jpg';
 
 export default {
-    name: "projects",
-    components: {
-        Project,
-    },
-    data: function data() {
-        return {
-            showContent: false,
-            backgroundImage,
-            podshareImage,
-            sjaufImage,
-        };
-    },
-    created() {
-        setTimeout(() => {
-            this.showContent = true;
-        }, 100);
-    },
-}
+  name: 'projects',
+  components: {
+    Project,
+  },
+  data: function data() {
+    return {
+      showContent: false,
+      backgroundImage,
+      podshareImage,
+      sjaufImage,
+    };
+  },
+  created() {
+    setTimeout(() => {
+      this.showContent = true;
+    }, 100);
+  },
+};
 </script>
 
 <style lang="scss">

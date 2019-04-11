@@ -20,19 +20,19 @@
 
 <script>
 export default {
-    props: {
-        skills: Array,
-        title: String,
-        link: String,
-        descriptions: Array,
-        image: String,
+  props: {
+    skills: Array,
+    title: String,
+    link: String,
+    descriptions: Array,
+    image: String,
+  },
+  computed: {
+    renderedSkills() {
+      return this.skills.join(' | ');
     },
-    computed: {
-        renderedSkills() {
-            return this.skills.join(' | ')
-        }
-    }
-}
+  },
+};
 </script>
 
 <style lang="scss">
@@ -68,4 +68,3 @@ export default {
         font-variant: small-caps;
     }
 </style>
-

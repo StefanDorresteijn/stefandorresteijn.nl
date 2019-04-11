@@ -85,18 +85,18 @@
 import cutout from '@/assets/cutout1.jpg';
 
 export default {
-    data() {
-        return {
-            showContent: false,
-            cutout,
-        }
-    },
-    created() {
-        setTimeout(() => {
-            this.showContent = true;
-        }, 100);
-    },
-}
+  data() {
+    return {
+      showContent: false,
+      cutout,
+    };
+  },
+  created() {
+    setTimeout(() => {
+      this.showContent = true;
+    }, 100);
+  },
+};
 </script>
 
 <style lang="scss">

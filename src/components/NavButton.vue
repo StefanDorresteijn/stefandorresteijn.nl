@@ -16,17 +16,17 @@ export default {
     link: String,
     active: Boolean,
     click: Function,
-    blank: Boolean
+    blank: Boolean,
   },
   methods: {
     navigate: async function navigate(name) {
-      if(name.startsWith('http')) {
-        return this.blank ? window.open(name, '_blank') : window.location.replace(name)
+      if (name.startsWith('http')) {
+        return this.blank ? window.open(name, '_blank') : window.location.replace(name);
       }
       await this.$router.push({
         name,
       });
-      this.$props.click();
+      return this.$props.click();
     },
   },
 };
