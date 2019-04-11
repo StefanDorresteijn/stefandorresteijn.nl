@@ -1,5 +1,9 @@
 <template>
   <div class="home">
+    <vue-headful
+        title="Stefan Dorresteijn | Home"
+        description="Stefan Dorresteijn is a full stack engineer, specialized in building full commercial applications from scratch."
+    />
     <transition name="fade">
       <ContentBlock
         v-if="showContent"
