@@ -10,7 +10,7 @@
                         <span class="projectSkills has-text-info">{{ renderedSkills }}</span>
                         <h2 class="projectTitle">{{ title }}</h2>
                         <p class="projectDescription" v-for="content in descriptions" :key="content">{{ content }}</p>
-                        <a :href="link" target="_blank" class="button is-large visitButton">visit {{ title }}</a>
+                        <a :href="link" target="_blank" class="button is-large visitButton" v-if="link">visit {{ title }}</a>
                     </div>
                 </div>
             </div>

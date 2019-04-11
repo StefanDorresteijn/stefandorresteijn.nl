@@ -22,6 +22,27 @@
             <div class="divider"></div>
         </section>
         <Project
+            :image="apexLyticsImage"
+            :skills="['Development', 'Web']"
+            :descriptions="[
+                'ApexLytics is an analytics platform for Apex Legends that runs on the Overwolf platform.',
+                'The only way to become a good player is by analyzing your own play, and improving on it. That\'s exactly what our platform allows you to do. See your statistics and go in-depth on your results.',
+                'ApexLytics was built using the Overwolf platform, making use of VueJS in the Overwolf framework.'
+            ]"
+            title="apexlytics"
+        />
+        <Project
+            image="https://refrag.gg/img/salesimg.cb3c8aec.png"
+            :skills="['Design', 'Development', 'Serverless']"
+            :descriptions="[
+                'Refrag is a tech company, creating the ultimate suite of tools for professional CS:GO teams.',
+                'Restrat is Refrag\'s first product and is the ultimate multi player demo viewer/replayer for teams and individuals looking to get more out of their demo reviewing efforts.',
+                'At Refrag, I get to use a series of technologies I enjoy working with such as VueJS, Ruby on Rails and AWS Lambda.'
+            ]"
+            title="refrag"
+            link="https://refrag.gg/"
+        />
+        <Project
             :image="podshareImage"
             :skills="['Design', 'Development', 'Web']"
             :descriptions="[
@@ -60,6 +81,7 @@ import Project from '@/components/Project.vue';
 import backgroundImage from '../assets/stefan_at_work.jpg';
 import podshareImage from '../assets/podshare.jpg';
 import sjaufImage from '../assets/sjauf.jpg';
+import apexLyticsImage from '../assets/apexlytics.jpg';
 
 export default {
   name: 'projects',
@@ -72,6 +94,7 @@ export default {
       backgroundImage,
       podshareImage,
       sjaufImage,
+      apexLyticsImage,
     };
   },
   created() {
