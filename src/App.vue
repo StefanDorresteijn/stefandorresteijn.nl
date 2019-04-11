@@ -25,7 +25,7 @@ export default {
       this.showNav = true;
     }, 500);
   },
-}
+};
 </script>
 
 
