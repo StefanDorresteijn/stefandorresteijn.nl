@@ -17,46 +17,26 @@
             </div>
             <div class="divider"></div>
         </section>
-        <div class="section contentSection">
-            <div class="container">
-                <div class="columns">
-                    <div class="column">
-                        <img :src="podshareImage" />
-                    </div>
-                    <div class="column">
-                        <div class="content">
-                            <span class="projectSkills has-text-info">Design | Development | Web</span>
-                            <h2 class="projectTitle">podshare</h2>
-                            <p class="projectDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum consequat nisi, eget sollicitudin nisl faucibus sit amet. Praesent ut sagittis sem, sagittis aliquam tellus. Proin accumsan eros augue, ut placerat turpis egestas in.</p>
-                            <p class="projectDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum consequat nisi, eget sollicitudin nisl faucibus sit amet. Praesent ut sagittis sem, sagittis aliquam tellus. Proin accumsan eros augue, ut placerat turpis egestas in.</p>
-                            <p class="projectDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum consequat nisi, eget sollicitudin nisl faucibus sit amet. Praesent ut sagittis sem, sagittis aliquam tellus. Proin accumsan eros augue, ut placerat turpis egestas in.</p>
-                            <p class="projectDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum consequat nisi, eget sollicitudin nisl faucibus sit amet. Praesent ut sagittis sem, sagittis aliquam tellus. Proin accumsan eros augue, ut placerat turpis egestas in.</p>
-                            <a href="https://podshare.io/" target="_blank" class="button is-large visitButton">visit podshare</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section contentSection">
-            <div class="container">
-                <div class="columns">
-                    <div class="column">
-                        <img :src="sjaufImage" />
-                    </div>
-                    <div class="column">
-                        <div class="content">
-                            <span class="projectSkills has-text-info">Architecture | Mobile | Web</span>
-                            <h2 class="projectTitle">sjauf</h2>
-                            <p class="projectDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum consequat nisi, eget sollicitudin nisl faucibus sit amet. Praesent ut sagittis sem, sagittis aliquam tellus. Proin accumsan eros augue, ut placerat turpis egestas in.</p>
-                            <p class="projectDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum consequat nisi, eget sollicitudin nisl faucibus sit amet. Praesent ut sagittis sem, sagittis aliquam tellus. Proin accumsan eros augue, ut placerat turpis egestas in.</p>
-                            <p class="projectDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum consequat nisi, eget sollicitudin nisl faucibus sit amet. Praesent ut sagittis sem, sagittis aliquam tellus. Proin accumsan eros augue, ut placerat turpis egestas in.</p>
-                            <p class="projectDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum consequat nisi, eget sollicitudin nisl faucibus sit amet. Praesent ut sagittis sem, sagittis aliquam tellus. Proin accumsan eros augue, ut placerat turpis egestas in.</p>
-                            <a href="https://sjauf.nl/" target="_blank" class="button is-large visitButton">visit sjauf</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <Project
+            :image="podshareImage"
+            :skills="['Design', 'Development', 'Web']"
+            :descriptions="[
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum consequat nisi, eget sollicitudin nisl faucibus sit amet. Praesent ut sagittis sem, sagittis aliquam tellus. Proin accumsan eros augue, ut placerat turpis egestas in.',
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum consequat nisi, eget sollicitudin nisl faucibus sit amet. Praesent ut sagittis sem, sagittis aliquam tellus. Proin accumsan eros augue, ut placerat turpis egestas in.'
+            ]"
+            title="podshare"
+            link="https://podshare.io/"
+        />
+        <Project
+            :image="sjaufImage"
+            :skills="['Architecture', 'Mobile', 'Web']"
+            :descriptions="[
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum consequat nisi, eget sollicitudin nisl faucibus sit amet. Praesent ut sagittis sem, sagittis aliquam tellus. Proin accumsan eros augue, ut placerat turpis egestas in.',
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum consequat nisi, eget sollicitudin nisl faucibus sit amet. Praesent ut sagittis sem, sagittis aliquam tellus. Proin accumsan eros augue, ut placerat turpis egestas in.'
+            ]"
+            title="sjauf"
+            link="https://sjauf.nl/"
+        />
         <footer class="footer">
             <div class="content has-text-centered">
                 <p>
@@ -71,7 +51,7 @@
 
 <script>
 // @ is an alias to /src
-import ContentBlock from '@/components/ContentBlock.vue';
+import Project from '@/components/Project.vue';
 import backgroundImage from '../assets/stefan_at_work.jpg';
 import podshareImage from '../assets/podshare.jpg';
 import sjaufImage from '../assets/sjauf.jpg';
@@ -79,7 +59,7 @@ import sjaufImage from '../assets/sjauf.jpg';
 export default {
     name: "projects",
     components: {
-        ContentBlock,
+        Project,
     },
     data: function data() {
         return {
@@ -113,36 +93,5 @@ export default {
             width: 100%;
             height:1px;
         }
-    }
-    .title {
-        font-variant: small-caps;
-        letter-spacing: 0.1em;
-        font-size: 3em;
-        font-family: 'Roboto';
-    }
-    .subtitle {
-        margin-left: 2px;
-        font-family: 'Roboto';
-        font-variant: small-caps;
-        font-weight: 300;
-    }
-    .projectTitle {
-        margin-top: 0 !important;
-        font-family: 'Roboto';
-        font-variant: small-caps;
-        font-weight: 300;
-    }
-    .projectSkills {
-        font-size: 0.75rem;
-        letter-spacing: 0.1em;
-    }
-    .projectDescription {
-        font-family: 'Roboto';
-    }
-    .contentSection:not(:last-of-type) {
-        padding-bottom: 0;
-    }
-    .visitButton {
-        font-variant: small-caps;
     }
 </style>
