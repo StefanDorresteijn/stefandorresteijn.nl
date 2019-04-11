@@ -20,7 +20,7 @@
             <div class="column has-text-centered is-hidden-touch">
               <a class="" v-on:click="navigate('home')">
                 <figure class="image is-24x24 logo">
-                  <img src="https://via.placeholder.com/28/fff/000/?text=S" />
+                  <img :src="logo" />
                 </figure>
               </a>
             </div>
@@ -33,6 +33,7 @@
 
 <script>
 import NavButton from '@/components/NavButton.vue';
+import logo from '@/assets/s.png';
 
 export default {
   name: 'navbar',
@@ -42,6 +43,7 @@ export default {
   data: function data() {
     return {
       openMenu: true,
+      logo,
     };
   },
   methods: {

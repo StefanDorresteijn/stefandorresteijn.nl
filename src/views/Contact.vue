@@ -25,7 +25,7 @@
                     <div class="section contentSection">
                         <div class="container">
                             <div class="columns">
-                                <div class="column">
+                                <div class="column is-hidden-touch">
                                     <img :src="cutout" />
                                 </div>
                                 <div class="column">
@@ -76,13 +76,6 @@
                         </div>
                     </div>
                 </section>
-                <footer class="footer">
-                    <div class="content has-text-centered">
-                        <p>
-                            <strong>Stefan Dorresteijn</strong> by <a href="https://stefandorresteijn.nl">Stefan Dorresteijn</a>.
-                        </p>
-                    </div>
-                </footer>
             </div>
         </transition>
     </div>
