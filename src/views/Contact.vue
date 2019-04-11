@@ -32,7 +32,8 @@
                                     <div class="content">
                                         <h2 class="projectTitle">we should work together</h2>
                                         <p class="projectDescription">Leave me a message and I'll contact you</p>
-                                        <form name="contact" method="POST" data-netlify="true">
+                                        <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                                            <input type="hidden" name="form-name" value="contact" />
                                             <div class="field">
                                                 <label class="label">Name</label>
                                                 <div class="control has-icons-left has-icons-right">
