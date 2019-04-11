@@ -21,8 +21,8 @@
             :image="podshareImage"
             :skills="['Design', 'Development', 'Web']"
             :descriptions="[
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum consequat nisi, eget sollicitudin nisl faucibus sit amet. Praesent ut sagittis sem, sagittis aliquam tellus. Proin accumsan eros augue, ut placerat turpis egestas in.',
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum consequat nisi, eget sollicitudin nisl faucibus sit amet. Praesent ut sagittis sem, sagittis aliquam tellus. Proin accumsan eros augue, ut placerat turpis egestas in.'
+                'Podshare is the world\'s first podcast episode sharing platform. Create a landing page in seconds and automatically give your listeners access to your episode, on whichever platform they prefer.',
+                'Podshare is a passion project I started developing with a close friend. I build the backend in Ruby on Rails, and the frontend is all VueJS. In the future we expect to use AWS Lambda to find links automatically, but for now we\'re keeping it nice and simple.'
             ]"
             title="podshare"
             link="https://podshare.io/"
@@ -31,8 +31,9 @@
             :image="sjaufImage"
             :skills="['Architecture', 'Mobile', 'Web']"
             :descriptions="[
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum consequat nisi, eget sollicitudin nisl faucibus sit amet. Praesent ut sagittis sem, sagittis aliquam tellus. Proin accumsan eros augue, ut placerat turpis egestas in.',
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum consequat nisi, eget sollicitudin nisl faucibus sit amet. Praesent ut sagittis sem, sagittis aliquam tellus. Proin accumsan eros augue, ut placerat turpis egestas in.'
+                'Sjauf is Holland\'s first personal driver app that allows you to book a driver for your own car. Fill in your route and pay the lowest price on the market. Satisfactory service every time, guaranteed.',
+                'I worked for Sjauf for 12 months, in order to build their technology from the ground up. Using a mixture of VueJS, React Native, Ruby on Rails and Elixir, I built their apps, websites and backend applications.',
+                'During this time, I helped the company with investment discussions, corporate structure and culture, and training of interns and juniors.'
             ]"
             title="sjauf"
             link="https://sjauf.nl/"

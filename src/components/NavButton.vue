@@ -1,6 +1,6 @@
 <template>
     <div class="column has-text-centered">
-        <a v-on:click="navigate(link)">
+        <a v-on:click="navigate(link)" :target="blank && '_blank'">
             <p :class="[{ active: active }, 'navLink']">
                 {{ text }}
             </p>
@@ -16,9 +16,13 @@ export default {
     link: String,
     active: Boolean,
     click: Function,
+    blank: Boolean
   },
   methods: {
     navigate: async function navigate(name) {
+      if(name.startsWith('http')) {
+        return this.blank ? window.open(name, '_blank') : window.location.replace(name)
+      }
       await this.$router.push({
         name,
       });

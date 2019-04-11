@@ -22,8 +22,8 @@
                 <img src="https://via.placeholder.com/28/fff/000/?text=S" />
               </figure>
             </div>
-            <NavButton text="clients" link="#" :active="$route.name === 'clients'" :click="openMobileMenu" />
-            <NavButton text="contact" link="#" :active="$route.name === 'contact'" :click="openMobileMenu" />
+            <NavButton text="writing" link="https://dev.to/stefandorresteijn" :active="$route.name === 'clients'" :click="openMobileMenu" blank />
+            <NavButton text="contact" link="contact" :active="$route.name === 'contact'" :click="openMobileMenu" />
           </div>
         </div>
       </div>
