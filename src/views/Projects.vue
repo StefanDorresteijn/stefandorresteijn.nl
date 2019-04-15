@@ -32,7 +32,7 @@
             title="apexlytics"
         />
         <Project
-            image="https://refrag.gg/img/salesimg.cb3c8aec.png"
+            :image="refragImage"
             :skills="['Design', 'Development', 'Serverless']"
             :descriptions="[
                 'Refrag is a tech company, creating the ultimate suite of tools for professional CS:GO teams.',
@@ -82,6 +82,7 @@ import backgroundImage from '../assets/stefan_at_work.jpg';
 import podshareImage from '../assets/podshare.jpg';
 import sjaufImage from '../assets/sjauf.jpg';
 import apexLyticsImage from '../assets/apexlytics.jpg';
+import refragImage from '../assets/refrag.jpg';
 
 export default {
   name: 'projects',
@@ -95,6 +96,7 @@ export default {
       podshareImage,
       sjaufImage,
       apexLyticsImage,
+      refragImage,
     };
   },
   created() {
