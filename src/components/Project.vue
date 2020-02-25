@@ -3,7 +3,7 @@
         <div class="container">
             <div class="columns">
                 <div class="column">
-                    <img :src="image" />
+                    <g-image :src="image" />
                 </div>
                 <div class="column">
                     <div class="content">

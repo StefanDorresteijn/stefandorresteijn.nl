@@ -1,19 +1,16 @@
-import Vue from 'vue';
-import Buefy from 'buefy';
-import vueHeadful from 'vue-headful';
+// This is the main.js file. Import global CSS and scripts here.
+// The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
-import 'buefy/dist/buefy.css';
-import App from './App.vue';
-import router from './router';
-import store from './store';
-import './registerServiceWorker';
+import DefaultLayout from '~/layouts/Default.vue'
+import Buefy from 'buefy'
+import VueCodeHighlight from 'vue-code-highlight';
+import 'vue-code-highlight/themes/prism.css'
+import 'buefy/dist/buefy.css'
 
-Vue.config.productionTip = false;
-Vue.use(Buefy);
-Vue.component('vue-headful', vueHeadful);
 
-new Vue({
-  router,
-  store,
-  render: h => h(App),
-}).$mount('#app');
+export default function (Vue, { router, head, isClient }) {
+  // Set default layout as a global component
+  Vue.use(Buefy)
+  Vue.use(VueCodeHighlight)
+  Vue.component('Layout', DefaultLayout)
+}

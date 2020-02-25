@@ -4,7 +4,7 @@
           <div class="is-hidden-desktop">
             <div class="navbar-brand">
               <a class="navbar-item" v-on:click="navigate('home')">
-                <img src="https://via.placeholder.com/28/fff/000/?text=S" width="28" height="28">
+                <g-image src="https://via.placeholder.com/28/fff/000/?text=S" width="28" height="28" />
               </a>
 
               <a role="button" class="navbar-burger burger" v-on:click="openMobileMenu">
@@ -15,16 +15,16 @@
             </div>
           </div>
           <div :class="['columns', 'is-gapless', {'is-hidden-touch': openMenu}]">
-            <NavButton text="home" link="home" :active="$route.name === 'home'" :click="openMobileMenu" />
+            <NavButton text="home" link="/" :active="$route.name === 'home'" :click="openMobileMenu" />
             <NavButton text="projects" link="projects" :active="$route.name === 'projects'" :click="openMobileMenu" />
             <div class="column has-text-centered is-hidden-touch">
               <a class="" v-on:click="navigate('home')">
                 <figure class="image is-24x24 logo">
-                  <img :src="logo" />
+                  <g-image :src="logo" />
                 </figure>
               </a>
             </div>
-            <NavButton text="writing" link="https://dev.to/stefandorresteijn" :active="$route.name === 'clients'" :click="openMobileMenu" blank />
+            <NavButton text="writing" link="writing" :active="$route.name === 'clients'" :click="openMobileMenu" />
             <NavButton text="contact" link="contact" :active="$route.name === 'contact'" :click="openMobileMenu" />
           </div>
         </div>

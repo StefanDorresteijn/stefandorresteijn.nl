@@ -1,10 +1,10 @@
 <template>
     <div class="column has-text-centered">
-        <a v-on:click="navigate(link)" :target="blank && '_blank'">
+        <g-link :to="link" @click="navigate()" :target="blank && '_blank'">
             <p :class="[{ active: active }, 'navLink']">
                 {{ text }}
             </p>
-        </a>
+        </g-link>
     </div>
 </template>
 
@@ -19,13 +19,7 @@ export default {
     blank: Boolean,
   },
   methods: {
-    navigate: async function navigate(name) {
-      if (name.startsWith('http')) {
-        return this.blank ? window.open(name, '_blank') : window.location.replace(name);
-      }
-      await this.$router.push({
-        name,
-      });
+    navigate: async function navigate() {
       return this.$props.click();
     },
   },
