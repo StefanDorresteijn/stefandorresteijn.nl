@@ -92,7 +92,7 @@ query Post($path: String!) {
     flex: 1;
   }
   .articleContent {
-    padding: 50px 0;
+    padding: 50px 15px;
   }
   .title {
         font-variant: small-caps;
