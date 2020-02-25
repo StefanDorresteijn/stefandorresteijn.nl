@@ -55,11 +55,6 @@ query Post($path: String!) {
     components: {
       VueMarkdown,
     },
-    data(){
-      return {
-        headings:NodeList
-      } 
-    },
     metaInfo() { 
       return {
         title: this.$page.article.title
