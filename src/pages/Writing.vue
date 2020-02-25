@@ -77,6 +77,9 @@ export default {
     featuredArticles() {
       return this.$page.allArticle.edges.filter(object => object.node.page_views_count > 1000).reverse()
     }
+  },
+  metaInfo: {
+    title: 'Writing',
   }
 };
 </script>

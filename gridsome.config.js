@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'StefanDorresteijn.nl',
+  siteName: 'Stefan Dorresteijn',
   plugins: [
     {
       use: '@stefandorresteijn/gridsome-source-devto',

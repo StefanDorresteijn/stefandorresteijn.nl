@@ -95,6 +95,9 @@ export default {
       this.showContent = true;
     }, 100);
   },
+  metaInfo: {
+    title: 'Contact',
+  }
 };
 </script>
 

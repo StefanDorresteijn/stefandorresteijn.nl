@@ -41,7 +41,7 @@ export default {
     }, 100);
   },
   metaInfo: {
-    title: 'Stefan Dorresteijn | Home',
+    title: 'Home',
     description: 'Stefan Dorresteijn is a full stack engineer, specialized in building full commercial applications from scratch.'
   }
 };

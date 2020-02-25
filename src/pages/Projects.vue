@@ -102,6 +102,10 @@ export default {
       this.showContent = true;
     }, 100);
   },
+  metaInfo: {
+    title: 'Projects',
+    description: 'Stefan Dorresteijn has projects written in languages like Ruby, VueJS, ReactJS, React Native, Elixir and many more!'
+  }
 };
 </script>
 
