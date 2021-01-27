@@ -9,13 +9,13 @@
   "dependencies": {
     "@stefandorresteijn/gridsome-source-devto": "^0.0.2",
     "babel-runtime": "^6.26.0",
-    "buefy": "^0.8.12",
+    "buefy": "^0.9.4",
     "core-js": "^3.6.4",
     "gridsome": "^0.7.0",
     "moment": "^2.24.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^5.0.0",
     "remove-markdown": "^0.3.0",
-    "sass-loader": "^8.0.2",
+    "sass-loader": "^10.1.1",
     "vue-code-highlight": "^0.7.4",
     "vue-markdown": "^2.2.4"
   }
