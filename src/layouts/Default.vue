@@ -30,7 +30,7 @@ export default {
 
 <style lang="scss">
   @import url('https://fonts.googleapis.com/css?family=Voces|Roboto:300,400&display=swap');
-  @import url('https://use.fontawesome.com/releases/v5.2.0/css/all.css');
+  @import url('https://use.fontawesome.com/releases/v5.15.2/css/all.css');
   html, body {
     background-color: black;
     margin:0;
