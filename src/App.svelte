@@ -8,7 +8,7 @@
       <h1>
         <span class="mt-1 block text-4xl font-extrabold sm:text-5xl xl:text-6xl">
           <span class="block text-gray-900">Stefan Dorresteijn</span>
-          <span class="block text-gray-500 text-sm font-light tracking-wide">Entrepreneur, developer, cybersecurity enthousiast</span>
+          <span class="block text-gray-500 text-sm font-light tracking-wide">Entrepreneur, developer, cybersecurity enthusiast</span>
         </span>
       </h1>
       <div class="mt-5">
