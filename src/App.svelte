@@ -37,7 +37,7 @@
   </div>
   <!-- END HERO -->
   <!-- ENTREPRENEURSHIP -->
-  <div class="lg:float-right lg:w-10/12 bg-blue-50 rounded-3xl mt-9 lg:grid lg:grid-cols-12 lg:gap-8">
+  <div class="lg:float-right lg:w-10/12 bg-blue-50 rounded-3xl mt-16 lg:grid lg:grid-cols-12 lg:gap-8">
     <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left flex flex-wrap content-center pl-12">
       <div>
         <h3 class="text-xl font-semibold mb-3 tracking-wide">Entrepreneurship</h3>
@@ -45,18 +45,18 @@
         <button class="text-black">See Projects</button>
       </div>
     </div>
-    <div class="invisible lg:visible pt-12 pb-12 pr-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
-      <img src="images/teamwork.svg" alt="Teamwork">
+    <div class="hidden lg:visible pt-12 pb-12 pr-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
+      <img src="images/teamwork.svg" alt="Teamwork" class="h-44">
     </div>
   </div>
   <div class="clear-both"></div>
 <!-- END ENTREPRENEURSHIP -->
 <!-- Software Development -->
-<div class="lg:w-10/12 bg-red-50 rounded-3xl mt-9 lg:grid lg:grid-cols-12 lg:gap-8">
-  <div class="invisible lg:visible pt-12 pb-12 pr-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
-    <img src="images/coding.svg" alt="Coding">
+<div class="lg:w-10/12 bg-red-50 rounded-3xl mt-16 lg:grid lg:grid-cols-12 lg:gap-8">
+  <div class="hidden lg:visible pt-12 pb-12 pl-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
+    <img src="images/coding.svg" alt="Coding" class="h-44">
   </div>
-  <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left flex flex-wrap content-center pl-12">
+  <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left flex flex-wrap content-center pr-12">
     <div>
       <h3 class="text-xl font-semibold mb-3 tracking-wide block">Software Development</h3>
       <p class="mb-3 font-light text-gray-700 block">There are few things in the world that bring me<br />as much joy as creating applications that people love.</p>
@@ -67,7 +67,7 @@
 <div class="clear-both"></div>
 <!-- END Software Development -->
   <!-- ENTREPRENEURSHIP -->
-  <div class="lg:float-right lg:w-10/12 bg-blue-50 rounded-3xl mt-9 lg:grid lg:grid-cols-12 lg:gap-8">
+  <div class="lg:float-right lg:w-10/12 bg-blue-50 rounded-3xl mt-16 lg:grid lg:grid-cols-12 lg:gap-8">
     <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left flex flex-wrap content-center pl-12">
       <div>
         <h3 class="text-xl font-semibold mb-3 tracking-wide">Cybersecurity</h3>
@@ -75,8 +75,8 @@
         <button class="text-black">See Projects</button>
       </div>
     </div>
-    <div class="invisible lg:visible pt-12 pb-12 pr-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
-      <img src="images/hacking.svg" alt="Hacking">
+    <div class="hidden lg:visible pt-12 pb-12 pr-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
+      <img src="images/hacking.svg" alt="Hacking" class="h-44">
     </div>
   </div>
   <div class="clear-both"></div>
