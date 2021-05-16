@@ -1,12 +1,12 @@
 <script>
 </script>
 
-<main class="mt-12 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6 lg:mt-16">
+<main class="mt-12 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6 md:mt-16">
   <!-- HERO -->
-  <div class="lg:grid lg:grid-cols-12 lg:gap-8">
-    <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
+  <div class="md:grid md:grid-cols-12 md:gap-8">
+    <div class="md:max-w-2xl md:mx-auto md:col-span-6">
       <h1>
-        <span class="mt-1 block text-4xl tracking-tight font-extrabold sm:text-5xl xl:text-6xl">
+        <span class="mt-1 block text-4xl font-extrabold sm:text-5xl xl:text-6xl">
           <span class="block text-gray-900">Stefan Dorresteijn</span>
           <span class="block text-gray-500 text-sm font-light tracking-wide">Entrepreneur, developer, cybersecurity enthousiast</span>
         </span>
@@ -29,35 +29,35 @@
         Let's Talk!
       </button>
     </div>
-    <div class="hidden lg:visible mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
-      <div class="flex-1" id="hasBlueBG">
-        <img class="flex-1" src="images/StefanRender.png" id="stefan" alt="Stefan's beautiful face">
+    <div class="hidden md:inline-block text-center mt-12 relative sm:max-w-lg sm:mx-auto md:mt-0 md:max-w-none md:mx-0 md:col-span-6 md:flex md:items-center">
+      <div id="hasBlueBG">
+        <img src="images/StefanRender.png" id="stefan" alt="Stefan's beautiful face">
       </div>
     </div>
   </div>
   <!-- END HERO -->
   <!-- ENTREPRENEURSHIP -->
-  <div class="lg:float-right lg:w-10/12 bg-blue-50 rounded-3xl mt-16 lg:grid lg:grid-cols-12 lg:gap-8">
-    <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left flex flex-wrap content-center pl-12">
-      <div>
+  <div class="md:float-right md:w-10/12 bg-blue-50 rounded-3xl mt-6 md:mt-24 md:grid md:grid-cols-12 md:gap-8">
+    <div class="justify-center md:max-w-2xl md:mx-auto md:col-span-6 flex flex-wrap content-center">
+      <div class="p-16">
         <h3 class="text-xl font-semibold mb-3 tracking-wide">Entrepreneurship</h3>
         <p class="mb-3 font-light text-gray-700">Startups are a passion of mine<br />so I’m never without a side project or business</p>
         <button class="text-black">See Projects</button>
       </div>
     </div>
-    <div class="hidden lg:visible pt-12 pb-12 pr-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
+    <div class="hidden md:inline-block justify-center relative sm:max-w-lg sm:mx-auto md:mt-0 md:max-w-none md:mx-0 md:col-span-6 md:flex md:items-center">
       <img src="images/teamwork.svg" alt="Teamwork" class="h-44">
     </div>
   </div>
   <div class="clear-both"></div>
 <!-- END ENTREPRENEURSHIP -->
 <!-- Software Development -->
-<div class="lg:w-10/12 bg-red-50 rounded-3xl mt-16 lg:grid lg:grid-cols-12 lg:gap-8">
-  <div class="hidden lg:visible pt-12 pb-12 pl-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
+<div class="md:w-10/12 bg-red-50 rounded-3xl mt-6 md:mt-24 md:grid md:grid-cols-12 md:gap-8">
+  <div class="hidden md:inline-block justify-center relative sm:max-w-lg sm:mx-auto md:mt-0 md:max-w-none md:mx-0 md:col-span-6 md:flex md:items-center">
     <img src="images/coding.svg" alt="Coding" class="h-44">
   </div>
-  <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left flex flex-wrap content-center pr-12">
-    <div>
+  <div class="justify-center md:max-w-2xl md:mx-auto md:col-span-6 flex flex-wrap content-center">
+    <div class="p-16">
       <h3 class="text-xl font-semibold mb-3 tracking-wide block">Software Development</h3>
       <p class="mb-3 font-light text-gray-700 block">There are few things in the world that bring me<br />as much joy as creating applications that people love.</p>
       <button class="text-black block">See Projects</button>
@@ -66,21 +66,72 @@
 </div>
 <div class="clear-both"></div>
 <!-- END Software Development -->
-  <!-- ENTREPRENEURSHIP -->
-  <div class="lg:float-right lg:w-10/12 bg-blue-50 rounded-3xl mt-16 lg:grid lg:grid-cols-12 lg:gap-8">
-    <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left flex flex-wrap content-center pl-12">
-      <div>
-        <h3 class="text-xl font-semibold mb-3 tracking-wide">Cybersecurity</h3>
-        <p class="mb-3 font-light text-gray-700">I love figuring out how things work,<br />so why not try to break them just a little?</p>
-        <button class="text-black">See Projects</button>
-      </div>
-    </div>
-    <div class="hidden lg:visible pt-12 pb-12 pr-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
-      <img src="images/hacking.svg" alt="Hacking" class="h-44">
+<!-- CYBER -->
+<div class="md:float-right md:w-10/12 bg-blue-50 rounded-3xl mt-6 md:mt-24 md:grid md:grid-cols-12 md:gap-8">
+  <div class="justify-center md:max-w-2xl md:mx-auto md:col-span-6 flex flex-wrap content-center">
+    <div class="p-16">
+      <h3 class="text-xl font-semibold mb-3 tracking-wide">Cybersecurity</h3>
+      <p class="mb-3 font-light text-gray-700">I love figuring out how things work,<br />so why not try to break them just a little?</p>
+      <button class="text-black">See Projects</button>
     </div>
   </div>
-  <div class="clear-both"></div>
-<!-- END ENTREPRENEURSHIP -->
+  <div class="hidden md:inline-block justify-center relative sm:max-w-lg sm:mx-auto md:mt-0 md:max-w-none md:mx-0 md:col-span-6 md:flex md:items-center">
+    <img src="images/hacking.svg" alt="Hacking" class="h-44">
+  </div>
+</div>
+<div class="clear-both"></div>
+<!-- END CYBER -->
+<!-- CONTENT CREATION -->
+<div class="mt-16">
+  <h3 class="text-2xl text-gray-900 font-extrabold sm:text-3xl xl:text-4xl mb-3">Content Creation</h3>
+  <p class="text-md text-gray-600">When I dive into something, I dive deep.<br />I love sharing that passion with others through the content I create.</p>
+</div>
+<div class="mt-8">
+  <div class="md:grid md:grid-cols-12 md:gap-8">
+    <a href="https://www.twitch.tv/ocjd" target="_blank" class="md:col-span-3 bg-purple-50 rounded-3xl flex flex-wrap justify-center items-center w-full h-64 flex-col">
+      <div class="flex-1 items-center flex flex-wrap justify-center">
+        <img src="images/twitch.png" class="w-24" alt="Twitch Logo" />
+      </div>
+      <span class="self-center pb-2 font-semibold">Twitch Channel</span>
+    </a>
+    <a href="https://dev.to/stefandorresteijn" target="_blank" class="md:col-span-3 bg-gray-50 rounded-3xl flex flex-wrap justify-center items-center w-full h-64 flex-col mt-5 md:mt-0">
+      <div class="flex-1 items-center flex flex-wrap justify-center">
+        <img src="images/dev.png" class="w-24" alt="Dev.to Logo" />
+      </div>
+      <span class="self-center pb-2 font-semibold">Dev.to Profile</span>
+    </a>
+    <a href="https://www.youtube.com/channel/UCMo87RBrCRvLiZfxfF8rgCA" target="_blank" class="md:col-span-3 bg-red-50 rounded-3xl flex flex-wrap justify-center items-center w-full h-64 flex-col mt-5 md:mt-0">
+      <div class="flex-1 items-center flex flex-wrap justify-center">
+        <img src="images/youtube.png" class="w-24" alt="Youtube Logo" />
+      </div>
+      <span class="self-center pb-2 font-semibold">Youtube Channel</span>
+    </a>
+    <a href="https://eye.security/nl/blog/page/1" target="_blank" class="md:col-span-3 bg-orange-50 rounded-3xl flex flex-wrap justify-center items-center w-full h-64 flex-col mt-5 md:mt-0">
+      <div class="flex-1 items-center flex flex-wrap justify-center">
+        <img src="images/eye.svg" class="w-24" alt="EYE Security Logo" />
+      </div>
+      <span class="self-center pb-2 font-semibold">EYE Blog</span>
+    </a>
+  </div>
+</div>
+<!-- END CONTENT CREATION -->
+<!-- Availability -->
+<div class="mt-16">
+  <div class="md:grid md:grid-cols-12 md:gap-8">
+    <div class="hidden md:block col-span-7">
+      <img src="images/booking.svg" alt="calendar" />
+    </div>
+    <div class="col-span-5">
+      <h3 class="text-2xl text-gray-900 font-extrabold sm:text-3xl xl:text-4xl mb-3">Availability</h3>
+      <p class="mb-3 font-light text-gray-700">While I’m currently employed at a full time position, I love helping people.</p>
+      <p class="mb-3 font-light text-gray-700">So if you need a hand, a pair of eyes or a fragment of my brain, let’s talk!</p>
+      <button type="button" class="mt-5 inline-flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+        Let's Talk!
+      </button>
+    </div>
+  </div>
+</div>
+<!-- END Availability -->
 </main>
 
 <style global lang="postcss">
@@ -93,5 +144,9 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+  }
+
+  .bg-orange-50 {
+    background-color: rgba(255, 209, 153, 0.25)
   }
   </style>
