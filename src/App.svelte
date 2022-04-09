@@ -11,7 +11,7 @@
         >
           <span class="block text-gray-900">Stefan Dorresteijn</span>
           <span class="block text-gray-500 text-sm font-light tracking-wide"
-            >Entrepreneur, developer, cybersecurity enthusiast</span
+            >Entrepreneur, developer, hacker</span
           >
         </span>
       </h1>
